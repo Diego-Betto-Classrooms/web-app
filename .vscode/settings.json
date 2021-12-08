@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "DB",
+            "database": "${workspaceFolder:webapp-5}/data/db.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

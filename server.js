@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const sqlite3 = require('sqlite3').verbose();
+const db = new sqlite3.Database('./data/db.sqlite');
 
 const newsData = require('./data/news.json');
 
@@ -18,7 +20,16 @@ app.post('/api/login', function(req, res) {
 })
 
 app.get('/api/news', function(req, res) {
-  res.send(newsData);
+  db.serialize(function() {
+    db.all('SELECT * FROM news', function(err, rows) {
+      if(err) {
+        res.status(406);
+        res.send(err);
+      }
+      res.send(rows)
+    });
+  });
+  
 })
 
 app.listen(5000)
