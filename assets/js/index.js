@@ -38,7 +38,6 @@ function renderNews() {
   }).then(function(data){
     return data.json()
   }).then(function(data){
-    console.log(data)
     const newsContainer = document.getElementById('news-container')
     if(newsContainer && data) {
       const htmlNews = [];
@@ -55,10 +54,11 @@ function renderNews() {
         cardBody.className = 'card-body';
 
         const img = document.createElement('img');
-        img.className = "bd-placeholder-img card-img-top";
+        img.className = "bd-placeholder-img card-img-top img-fluid";
         img.width = "100%";
         img.height = "225";
         img.src = singleNews.image;
+        img.loading = 'lazy'
 
         const title = document.createElement('h5');
         title.className = 'card-title';

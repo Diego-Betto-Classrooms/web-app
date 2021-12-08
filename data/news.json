@@ -2,19 +2,73 @@
     {
         "id": 1,
         "title": "First example news",
-        "image": "https://loremflickr.com/640/360",
+        "image": "https://randomwordgenerator.com/img/picture-generator/57e7dd414c53a514f1dc8460962e33791c3ad6e04e507440752972d3924bc6_640.jpg",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
         "id": 2,
         "title": "Second example news",
-        "image": "https://loremflickr.com/640/360/dog",
+        "image": "https://randomwordgenerator.com/img/picture-generator/54e7d5414c56a814f1dc8460962e33791c3ad6e04e507441722a72dd954dc5_640.jpg",
         "text": "At volutpat diam ut venenatis.<br><br>Augue eget arcu dictum varius duis. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Molestie at elementum eu facilisis sed odio. Ultricies leo integer malesuada nunc vel risus commodo viverra. Parturient montes nascetur ridiculus mus mauris. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Nulla malesuada pellentesque elit eget."
     },
     {
         "id": 3,
         "title": "Third example news",
-        "image": "https://loremflickr.com/640/360/bear",
+        "image": "https://randomwordgenerator.com/img/picture-generator/57e0dd424252a414f1dc8460962e33791c3ad6e04e507441722a72dc924ec7_640.jpg",
+        "text": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Iaculis eu non diam phasellus vestibulum."
+    },
+    {
+        "id": 4,
+        "title": "First example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/57e1d14a425ba914f1dc8460962e33791c3ad6e04e50744172297bd6944fc7_640.jpg",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 5,
+        "title": "Second example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/55e8d24b4f54af14f1dc8460962e33791c3ad6e04e5074417c2d78d39e48c5_640.jpg",
+        "text": "At volutpat diam ut venenatis.<br><br>Augue eget arcu dictum varius duis. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Molestie at elementum eu facilisis sed odio. Ultricies leo integer malesuada nunc vel risus commodo viverra. Parturient montes nascetur ridiculus mus mauris. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Nulla malesuada pellentesque elit eget."
+    },
+    {
+        "id": 6,
+        "title": "Third example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/silviu-beniamin-tofan-QHz_SqhdbiE-unsplash.jpg",
+        "text": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Iaculis eu non diam phasellus vestibulum."
+    },
+    {
+        "id": 7,
+        "title": "First example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/57e8d1414854ab14f1dc8460962e33791c3ad6e04e50744172297bd6944fc7_640.jpg",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 8,
+        "title": "Second example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/52e1d6414f5ba914f1dc8460962e33791c3ad6e04e507440762e79d09548c6_640.jpg",
+        "text": "At volutpat diam ut venenatis.<br><br>Augue eget arcu dictum varius duis. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Molestie at elementum eu facilisis sed odio. Ultricies leo integer malesuada nunc vel risus commodo viverra. Parturient montes nascetur ridiculus mus mauris. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Nulla malesuada pellentesque elit eget."
+    },
+    {
+        "id": 9,
+        "title": "Third example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/54e6d4424c55ab14f1dc8460962e33791c3ad6e04e5074417d2e72d6914ac3_640.jpg",
+        "text": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Iaculis eu non diam phasellus vestibulum."
+    },
+    {
+        "id": 10,
+        "title": "First example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/54e7dd454d5aa514f1dc8460962e33791c3ad6e04e507440742e7dd59f4dc3_640.jpg",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "id": 11,
+        "title": "Second example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/g0f6f27b04c275550b4e86010d44d814bdebffe660fd38d3fb88768fcbb360d853edc9d3dc51202e11366ecba3e0e5f5f_640.jpg",
+        "text": "At volutpat diam ut venenatis.<br><br>Augue eget arcu dictum varius duis. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Sed vulputate odio ut enim blandit volutpat maecenas. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Molestie at elementum eu facilisis sed odio. Ultricies leo integer malesuada nunc vel risus commodo viverra. Parturient montes nascetur ridiculus mus mauris. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Nulla malesuada pellentesque elit eget."
+    },
+    {
+        "id": 12,
+        "title": "Third example news",
+        "image": "https://randomwordgenerator.com/img/picture-generator/54e1d4404353a814f1dc8460962e33791c3ad6e04e507440722d72d2954ec2_640.jpg",
         "text": "Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Augue interdum velit euismod in pellentesque massa placerat duis ultricies. Iaculis eu non diam phasellus vestibulum."
     }
 ]
