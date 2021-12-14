@@ -9,10 +9,15 @@ function login(event) {
 
   fetch('http://localhost:3000/api/login', {
     method: 'POST', 
+    redirect: 'follow',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({email, password})
+  }).then(function(data){
+    if(data.status === 401) {
+      throw new Error('Invalid user');
+    }
   }).then(function(data){
     return data.json()
   }).then(function(data){
@@ -21,6 +26,8 @@ function login(event) {
     } else {
       alert('Errore login, riprova')
     }
+  }).catch(function(error) {
+    alert(error)
   });
 }
 

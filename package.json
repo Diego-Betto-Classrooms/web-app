@@ -18,7 +18,8 @@
     "start": "npm-run-all --parallel watch",
     "watch": "nodemon -e html,scss,js -x \"npm run css\"",
     "test": "npm run css-lint && npm run css",
-    "develop": "webpack serve --hot"
+    "develop": "webpack serve --hot",
+    "buildapp": "webpack -c webpack.build.config.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,9 @@
     "bootstrap-icons": "^1.7.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
