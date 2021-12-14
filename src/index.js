@@ -1,4 +1,5 @@
-import "bootstrap/dist/js/bootstrap.bundle.min";
+import 'bootstrap/js/dist/modal';
+import '../scss/index.scss';
 
 function login(event) {
   event.preventDefault();
@@ -30,7 +31,7 @@ if(loginForm){
 
 /** NEWS */
 function renderNews() {
-  fetch('http://localhost:3000/api/news', {
+  fetch('http://localhost:3000/api/news', { 
     method: 'GET', 
     headers: {
       'Content-Type': 'application/json'
@@ -90,3 +91,11 @@ function documentReady(callback){
 }
 
 documentReady(renderNews)
+
+/** WEBPACK HOT RELOAD */
+if (module.hot) {
+  console.log(module.hot)
+  module.hot.accept('./index.js', function() {
+    console.log('Accepting the updated printMe module!');
+  })
+}
