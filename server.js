@@ -11,6 +11,8 @@ app.use(cors());
 
 app.use(express.json());
 
+app.use(express.static('public'));
+
 app.post('/api/login', function(req, res) { 
   if(req.body.email === 'test@email.com' && req.body.password === '123') {
     res.send({response: 'ok'})
@@ -32,4 +34,4 @@ app.get('/api/news', function(req, res) {
   
 })
 
-app.listen(5000)
+app.listen(3000)

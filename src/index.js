@@ -1,4 +1,4 @@
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function login(event) {
   event.preventDefault();
@@ -6,7 +6,7 @@ function login(event) {
   const email = document.getElementById('floatingInput').value
   const password = document.getElementById('floatingPassword').value
 
-  fetch('http://localhost:5000/api/login', {
+  fetch('http://localhost:3000/api/login', {
     method: 'POST', 
     headers: {
       'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ if(loginForm){
 
 /** NEWS */
 function renderNews() {
-  fetch('http://localhost:5000/api/news', {
+  fetch('http://localhost:3000/api/news', {
     method: 'GET', 
     headers: {
       'Content-Type': 'application/json'
