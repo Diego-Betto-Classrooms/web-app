@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reset.min.css" integrity="sha512-Mjxkx+r7O/OLQeKeIBCQ2yspG1P5muhAtv/J+p2/aPnSenciZWm5Wlnt+NOUNA4SHbnBIE/R2ic0ZBiCXdQNUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.css" integrity="sha512-og4MAAhv7j2gLmZ2HNWT/ZqzBvrEWGE+fxjhQN+Svg2jsPaM3HcYF2rLTRzvzbYkp/W4eMFciBsdIHHvsTsxjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/theme/black.min.css" integrity="sha512-DKeDMgkMDBNgY3g8T6H6Ft5cB7St0LOh5d69BvETIcTrP0E3d3KhANTMs5QOTMnenXy6JVKz/tENmffCLeXPiQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/monokai.min.css" integrity="sha512-z8wQkuDRFwCBfoj7KOiu1MECaRVoXx6rZQWL21x0BsVVH7JkqCp1Otf39qve6CrCycOOL5o9vgfII5Smds23rg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    #external_md {
+      display: block;
+      padding: 10px;
+      width: 150px;
+      font-size: 1.25rem;
+      margin: 120px auto 0;
+    }
+    .reveal code {
+      background-color: #444;
+      padding: 0 6px;
+      font-size: .8em;
+    }
+  </style>
+</head>
+
+<body>
+  <select id="external_md" name="markdown" autofocus>
+    <option>Seleziona...</option>
+    <option value="step-01.md">Step 01</option>
+  </select>
+  <div class="reveal">
+    <div class="slides">
+      <section id="presentation" data-markdown="step-01.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/reveal.min.js" integrity="sha512-/wlhXEDdbvt3WbfQwgZ4hRehxquuDDLja5DV0lyoW+5kSVaCaQV9EAEU6AmpAkXd+S5yV78TJK/+YqR0uy8h4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/highlight/highlight.min.js" integrity="sha512-U3fPDUX5bMrn1wnYqjaK44MFA9E6MKS+zPAg9WPAGF5XhReBeDj3FGaA831CjueG+YJxYA3WaO/m33kMIoOs/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/markdown/markdown.min.js" integrity="sha512-KSOrBsj0WKbq6xcEboor7XHEq+QQNVWXJ4IFXC/k7aR8ZATkUPA01ERRFMtkkApsGs71JpygBvs3eRNLammVoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.2.1/plugin/notes/notes.min.js" integrity="sha512-v2co+5nr0bgHekutTzF5jAB0UAjM95dpCF7VVw7WsFCjfxonbQo8Vwl487tNYl0iHWHHGV4o5xKBp5ifyhJkWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    function delayed_init(){
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      });
+    }
+  </script>
+
+<script type="text/javascript">
+  function setPresentation(value) {
+    document.getElementById("presentation").setAttribute("data-markdown", value);
+      delayed_init();
+      fileSelector = document.getElementById("external_md");
+      fileSelector.parentNode.removeChild(fileSelector);
+      setTimeout(() => {
+        document.querySelectorAll('a').forEach(function(link){link.target = '_blank'})
+      }, 300);
+  }
+  function selectFile(evt) {
+    setPresentation(evt.target.value);
+  }
+  document.getElementById('external_md').addEventListener('change',selectFile,false);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const file = urlParams.get('file');
+  if(file) {
+    setPresentation(file)
+  }
+  </script>
+</body>
+
+</html>
